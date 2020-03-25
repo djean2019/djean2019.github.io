@@ -12,7 +12,11 @@ h2{
     text-decoration: underline overline;
     text-decoration-color: red;
 }
-#mood{
+#bmood{
+    height: 200px;
+    width: 200px;
+}
+#gmood{
     height: 200px;
     width: 200px;
 }
