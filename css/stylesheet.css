@@ -1,0 +1,31 @@
+p{
+    font-size: 14pt;
+    color: blue;
+    font-family: "Times New Roman', Times, serif";
+}
+h1{
+    color: red;
+    background-color: yellow;
+}
+h2{
+    color: blue;
+    text-decoration: underline overline;
+    text-decoration-color: red;
+}
+ul > li{
+    color: blue;
+}
+#val a.ref img{
+    height: 31px;
+    width: 95px;
+}
+body{
+    font-size: 14pt;
+    background-color: khaki;
+    background-image: url("/images/DJ.jpg");
+    background-size: cover;
+    background-clip: padding-box;
+}
+footer{
+    float: center;
+}
