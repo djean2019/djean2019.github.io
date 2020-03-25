@@ -34,6 +34,10 @@ ul > li{
     height: 31px;
     width: 95px;
 }
+#val{
+    position: absolute;
+    right: 10px;
+}
 h1 > span{
     position: absolute;
     right: 10px;
@@ -42,12 +46,25 @@ h3{
     color: green;
     background-color: lightgray;
 }
-h3 > p{
-    background-color: red;
+#p1{
+    color: black;
+    background-color: tan;
+}
+#p2{
+    color: black;
+    background-color: tan;
+}
+#p3{
+    color: black;
+    background-color: tan;
 }
 #mybody{
     font-size: 14pt;
     background-image: url("/images/DJ.jpg");
     background-size: cover;
     background-clip: padding-box;
+}
+footer{
+    position: absolute;
+    right: 10px;
 }
