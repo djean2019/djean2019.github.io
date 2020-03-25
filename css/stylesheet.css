@@ -12,6 +12,10 @@ h2{
     text-decoration: underline overline;
     text-decoration-color: red;
 }
+#mood{
+    height: 200px;
+    width: 200px;
+}
 ul > li{
     color: blue;
 }
