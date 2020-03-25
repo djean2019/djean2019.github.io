@@ -47,16 +47,25 @@ h3{
     background-color: lightgray;
 }
 #p1{
+    margin-left: 40px;
+    margin-right: 40px;
     color: black;
-    background-color: tan;
+    background-color: wheat;
 }
 #p2{
+    margin-left: 40px;
+    margin-right: 40px;
     color: black;
-    background-color: tan;
+    background-color: wheat;
 }
 #p3{
+    margin-left: 40px;
+    margin-right: 40px;
     color: black;
-    background-color: tan;
+    background-color: wheat;
+}
+em{
+    font-weight: bold;
 }
 #mybody{
     font-size: 14pt;
