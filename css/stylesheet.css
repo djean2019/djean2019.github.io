@@ -12,6 +12,13 @@ h2{
     text-decoration: underline overline;
     text-decoration-color: red;
 }
+#recipe{
+    text-align: center;
+    background-color: lightgray;
+}
+#rbody{
+    background-color: white;
+}
 #bmood{
     height: 200px;
     width: 200px;
@@ -27,9 +34,19 @@ ul > li{
     height: 31px;
     width: 95px;
 }
-body{
+h1 > span{
+    position: absolute;
+    right: 10px;
+}
+h3{
+    color: green;
+    background-color: lightgray;
+}
+h3 > p{
+    background-color: red;
+}
+#mybody{
     font-size: 14pt;
-    background-color: khaki;
     background-image: url("/images/DJ.jpg");
     background-size: cover;
     background-clip: padding-box;
