@@ -47,20 +47,23 @@ h3{
     background-color: lightgray;
 }
 #p1{
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     background-color: wheat;
 }
 #p2{
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     background-color: wheat;
 }
 #p3{
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
     color: black;
     background-color: wheat;
 }
