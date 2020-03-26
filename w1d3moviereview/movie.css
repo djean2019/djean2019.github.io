@@ -4,6 +4,9 @@ h1 {
     text-align: center;
     text-shadow: 4px 4px lightgray;
 }
+h3{
+    text-align: center;
+}
 body {
     background-image: url('images/background.png');
     margin: 0px;
@@ -29,7 +32,7 @@ body {
 
 #overview {
     float: right;
-    background-color: #A2B964;
+    background-color: lightgreen;
     width: 250px;
     font-size: 8pt;
     font-family: Arial, sans-serif;
@@ -103,6 +106,7 @@ body {
 }
 
 .footer{
+    background-color: lightgreen;
     padding: 5px;
     margin-bottom: 0px;
     text-align: center;
