@@ -1,0 +1,17 @@
+/* AUTHOR: Darphe HYPPOLITE JEAN */
+h1{
+    text-align: center;
+}
+.cont{
+    margin: 1em;
+    padding: 1em;
+    border: 6px solid lightgray;
+}
+
+#btnSubmit{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 16pt;
+    padding: 1em;
+    border-radius: 15px;
+}
