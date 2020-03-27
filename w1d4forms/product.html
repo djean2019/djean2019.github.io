@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<link
 			href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT"
+			rel="stylesheet" integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT"
 			crossorigin="anonymous">
 			<link rel="stylesheet" href="styles.css">
         <title>GDM - Products</title>
@@ -95,7 +94,7 @@
               		 <div class="col-md-6">
                         <div class="form-group">
                             <label for="dateSupplied">Date supplied</label>
-                            <input id="dateSupplied" name="dateSupplied" placeholder="yyyy-mm-dd" type="date" class="form-control">
+                            <input id="dateSupplied" name="dateSupplied" polyfill="yyyy-mm-dd" type="date" class="form-control">
                             <small class="form-text text-muted">Enter a valid date</small>
                         </div>
                     </div>  
@@ -113,8 +112,8 @@
             </fieldset>
         </form>
     </div>
-    <div id="validators">
-        <a href="https://validator.w3.org/check/referer"><img src="./images/w3c-html.png" alt="Valid HTML5" /></a> <br />
+    <div id="valid">
+        <a href="https://validator.w3.org/check/referer"><img src="./images/w3c-html.png" alt="Validators HTML5" /></a> <br />
         <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./images/w3c-css.png" alt="Valid CSS" /></a>
     </div>
 
