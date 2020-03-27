@@ -7,8 +7,8 @@
 			rel="stylesheet"
 			integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT"
 			crossorigin="anonymous">
-			<!-- <link rel="stylesheet" type="text/css" th:href="@{/css/master.css}"> -->
-		<title>GDM - Products</title>
+			<link rel="stylesheet" href="styles.css">
+        <title>GDM - Products</title>
 	</head>
 	<body>
         <header>
@@ -20,6 +20,11 @@
               
                 <div class="collapse navbar-collapse" id="navbarColor01">
                   <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link">|</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item"><a class="nav-link">|</a>
                     </li>
                     <li class="nav-item active">
@@ -103,10 +108,14 @@
                 <div style="float:right;">
                     <input class="btn btn-outline-primary" id="reset" type="reset" value="Reset">&nbsp;&nbsp;&nbsp;
                     <button class="btn btn-outline-warning">Cancel</button>&nbsp;&nbsp;&nbsp;
-                    <button id="btnSubmit" type="submit" class="btn btn-outline-success">Add Product</button>
+                    <button id="btSubmit" type="submit" class="btn btn-outline-success">Add Product</button>
                 </div>
             </fieldset>
         </form>
+    </div>
+    <div id="validators">
+        <a href="https://validator.w3.org/check/referer"><img src="./images/w3c-html.png" alt="Valid HTML5" /></a> <br />
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./images/w3c-css.png" alt="Valid CSS" /></a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

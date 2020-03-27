@@ -15,3 +15,10 @@ h1{
     padding: 1em;
     border-radius: 15px;
 }
+
+#validators {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.5;
+}
