@@ -93,7 +93,7 @@ function filterLongWords(word, i) {
     let filterLong=[];
     let index=0;
     for(let j=0;j<word.length;j++){
-        if(j<word[j].length){
+        if(i<word[j].length){
             filterLong[index]=word[j];
             index++;
         }
