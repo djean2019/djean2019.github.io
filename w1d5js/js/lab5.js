@@ -321,4 +321,8 @@ function printFibo1(n){
     
     return fib;
 }
+<<<<<<< HEAD
 console.log("13.1- Fibo sequence/recursion: "+printFibo1(10,0,1));
+=======
+console.log("13- Fibo sequence/recursion: "+printFibo(10,0,1));
+>>>>>>> 0a0986e1e612a50e4a39dee89b1388816163e941
