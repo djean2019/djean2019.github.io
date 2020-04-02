@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+
+		<!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+		<!-- link to your script file here -->
+		<script src="decoratemytext.js" type="text/javascript"></script>
+	</head>
+
+	<body id="bod">
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="decorate.gif" alt="very decorated!" />
+		</div>
+
+		<!-- Your UI controls go here -->
+		<div>
+			<form id="formText">
+				<fieldset>
+					<legend>Text</legend>
+					<textarea name="tArea" id="tArea" cols="50" rows="8">
+						Sample Item 1
+						Sample Item 2
+					</textarea>
+				</fieldset>
+			</form>
+			<form  class="form-group" id="formDecorate">
+				<fieldset>
+					<legend>Decoration</legend>
+					<div class="form-control">
+						<!-- <button id="ok1" class="form-control">Bigger Decoration!</button> // works without form-->
+						<input id="ok1" type="button" value="Bigger Decoration!">
+						<input id="ok2" type="button" value="Igpay Atinlay">
+						<input id="ok3" type="button" value="Malkovitch!">
+					</div>
+					<input type="checkbox" name="bling" id="bling">
+					<label for="bling">Bling</label>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

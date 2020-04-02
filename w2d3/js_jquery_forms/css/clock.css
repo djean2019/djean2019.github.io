@@ -1,0 +1,19 @@
+body{
+    background: #910404;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+.cloc{
+    position: absolute;
+    width: fit-content;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0.5%) translate(-50%);
+    color: #ffffff;
+    font-size: 60px;
+    border: 2px solid #cccccc;
+    padding: 1px 5px 1px 5px;
+}
