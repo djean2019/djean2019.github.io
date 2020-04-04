@@ -14,7 +14,7 @@ fieldset > label{
 }
 #tArea{
     width: 50%;
-    font-size: 12pt;
+    font-size: 10pt;
     /* background: none; */
     border: 2px solid red;
 }

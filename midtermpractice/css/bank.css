@@ -1,0 +1,44 @@
+#headr{
+    background-color: lightgreen;
+    color: lime;
+}
+.formDiv{
+    margin: 2em;
+    padding: 1em;
+    border: 0px solid lightgray;
+}
+#thead{
+    background-color: aquamarine;
+    color: brown;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+    width: 100%;
+}
+h4{
+    background-color: lightgreen;
+    padding-left: 4pt;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+}
+h1{
+    background-color: lightgreen;
+}
+#listAccount li{
+    list-style-type: none;
+    border: 1px solid lightgreen;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+#listAccount{
+    padding-left: 0px;
+}
+#validators {
+    position: fixed;
+    bottom: 18px;
+    right: 0px;
+    opacity: 0.5;
+}

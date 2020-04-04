@@ -1,7 +1,7 @@
 const Person=function(name, dateOfBirth){
     this.name=name;
     this.dateOfBirth=dateOfBirth;
-
+    constructor:Person;
          getName=function(){
             return this.name;
         },
@@ -17,7 +17,7 @@ const peter=new Person("Peter",shortDate);
 peter.toString = function(){
     return `Name: ${this.name}, DateOfBirth: ${this.dateOfBirth}`;
 }
-console.log("===================");
+console.log("==================================");
 console.log("Person with constructor Function");
-console.log("===================");
+console.log("==================================");
 console.log(peter.toString());
