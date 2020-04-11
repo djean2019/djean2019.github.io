@@ -1,0 +1,25 @@
+#maindiv{
+    width: 80%;
+    margin: auto;
+    border: none;
+    text-align: justify;
+}
+img{
+    margin-left: 6px;
+    float: right;
+    clear: left;
+}
+footer{
+    bottom: 0em;
+    position: fixed;
+    width: 100%;
+    background-color: lightgray;
+}
+.formDiv{
+    width: 80%;
+    margin: auto;
+    border: none;
+}
+#dat{
+    color: white;
+}

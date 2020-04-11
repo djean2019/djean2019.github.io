@@ -1,0 +1,21 @@
+#a{
+    font-size: 5em;
+    text-align: center;
+    background-color: lightblue;
+    width: 100px;
+}
+#b{
+    font-size: 80px;
+    text-align: center;
+    background-color: pink;
+    width: 100px;
+}
+#a, #b{
+    float: left;
+}
+#c{
+    margin-left: 200px;
+    width: 200px;
+    text-align: left;
+    background-color: lightgray;
+}

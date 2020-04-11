@@ -1,3 +1,10 @@
+/**
+ * bank.js
+ * 
+ * @Author : Darphe HYPPOLITE JEAN
+ */
+"use strict"
+
 $(document).ready(
     function(){
         let account=[];
@@ -20,6 +27,8 @@ $(document).ready(
                     index++;
                     let newAccount= $("#accountNum").val() +" | "+ $("#custName").val() + " | " + $("#acctType").val();
                     $("#listAccount").append('<li>'+newAccount+'</li>');
+
+                    $("<p>", { "id": "myid", "class": "special", "text": "My paragraph is awesome!" });
                }
             }
         )

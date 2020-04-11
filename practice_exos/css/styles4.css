@@ -1,0 +1,23 @@
+#a{
+    font-size: 5em;
+    text-align: center;
+    background-color: lightblue;
+    float: left;
+    margin-right: 1px;
+    width: 100px;
+}
+#b{
+    font-size: 80px;
+    text-align: center;
+    background-color: pink;
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+
+/* second solution */
+    /* position: relative;
+    margin-top: 20px; */
+}
+#c{
+    background-color: lightgray;
+}

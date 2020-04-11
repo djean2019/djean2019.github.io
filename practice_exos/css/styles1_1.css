@@ -1,0 +1,17 @@
+#outer{
+    border: 2px dashed black;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 10px;
+    float: left;
+}
+
+.break{
+    clear: left;
+}

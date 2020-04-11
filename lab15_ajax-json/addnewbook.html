@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script defer src="./js/librarybooksapp.js"></script>
+    <title>Library Books Management webapp 1.0</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Library- Mgmt Web App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">|<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="books.html">Books <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">|</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="addnewbook.html">Add new Book</a>
+                  </li> -->
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <span id="dat"></span>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container" style="padding:1em">
+        <h4>Add New Book Form</h4>
+            <hr>
+            <div>
+                <span>
+                    <b>Note: </b> All fields that's preceded by an asterics are required
+                </span>
+            </div>
+            <br>
+
+        <form id="addBookForm">
+            <fieldset>
+                <input type="hidden" name="bookId" value=""/>
+
+                <div class="form-group">
+                    <label for="title">*Book Title</label>
+                    <input class="form-control" type="text" name="title" id="title" placeholder="Enter the book title" required autofocus>
+                    <small class="form-text text-muted">Enter the book title</small>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="isbn">*ISBN</label>
+                            <input class="form-control" type="text" name="isbn" id="isbn" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="overdueFee">*Overdue Fee per day</label>
+                            <input class="form-control" type="text" name="overdueFee" id="overdueFee" placeholder="0.00" pattern="\d{1,}[\.]\d{2}" required>
+                            <small class="form-text text-muted">Enter a valid decimal amount; in dollars and cents; no comma (e.g. 1.99)</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="publisher">*Publisher</label>
+                        <input class="form-control" type="text" name="publisher" id="publisher" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="datePublished">*Date Published</label>
+                        <input class="form-control" type="date" name="datePublished" id="datePublished" required>
+                    </div>
+                </div>
+
+                <div style="float: right;">
+                    <input id="btReset" type="reset" class="btn btn-outline-primary" value="Reset" >
+                    <input id="btSubmit" type="submit" class="btn btn-outline-success" value="Save Book" >
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+        <footer>
+            <span style="float: left;"> Darphe HYPPOLITE JEAN - WAP</span>
+            <span style="float: right;">@ April 2020</span>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

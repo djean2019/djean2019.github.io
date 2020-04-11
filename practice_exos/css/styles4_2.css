@@ -1,0 +1,24 @@
+#a{
+    font-size: 5em;
+    text-align: center;
+    background-color: lightblue;
+    float: left;
+    margin-right: 1px;
+    width: 100px;
+}
+#b{
+    font-size: 80px;
+    text-align: center;
+    background-color: pink;
+    float: right;
+    /* clear: left;  for another style(view)*/
+    margin-left: 10px;
+    width: 100px;
+}
+
+#c{
+    text-align: center;
+    margin-left: 100px;
+    background-color: lightgray;
+    width: 100px;
+}
