@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/census.js"></script>
+    <title>Census Form</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">The South West - Regional Census</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">|<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">|</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="censusform.html">Census Form</a>
+                  </li>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <span id="dat"></span>
+              </form>
+            </div>
+          </nav>
+        </header>
+        <div class="formDiv">
+            <h2>Census Form</h2>
+                <hr>
+            <form id="censusForm" method="POST">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="fullname">*Full Name:</label>
+                        <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter your Full Name" required>
+                        <small class="form-text text-muted">Enter your Full Name as printed on your Government issued ID</small>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="citizenId">*Citizen ID:</label>
+                                <input class="form-control" type="text" name="citizenId" id="citizenId" placeholder="XXXXXXXXXX" pattern="\d{10}" required>
+                                <small class="form-text text-muted">Enter your 10-Digit Citizen ID</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="ssn">*Social Security Number:</label>
+                                <input class="form-control" type="text" name="ssn" id="ssn" placeholder="XXX-XX-XXXX" pattern="\d{3}[\-]\d{2}[\-]\d{4}" required>
+                                <small class="form-text text-muted">Enter your Social Security Number (in the Format shown)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="state">*State</label>
+                                <select class="form-control" id="state" name="state">
+                                    <option value="">Select...</option>
+                                    <option value="Iowa">Arizona</option>
+                                    <option value="New Mexico">New Mexico</option>
+                                    <option value="Arizona">Texas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- <label>*Senior Citizen?</label><br> //Instead of fieldset-->
+                                <fieldset>
+                                    <legend style="font-size: medium;">*Senior Citizen?</legend>
+                                    <label><input type="radio" id="citizenYes" name="seniorcitizen" value="Yes" /> Yes</label>
+                                    <label><input type="radio" id="citizenNo" name="seniorcitizen" value="No" /> No</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                     </div>
+                    <div style="float: right;">
+                        <input id="btReset" type="reset" class="btn btn-outline-primary" value="Reset" >
+                        <input id="btSubmit" type="submit" class="btn btn-outline-success" value="Submit" >
+                    </div>
+                </fieldset>
+            </form>
+            <div>
+                <hr>
+                <table class="table table-striped" id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Citizen ID</th>
+                            <th>Social Security</th>
+                            <th>Full Name</th>
+                            <th>State</th>
+                            <th>Senior</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listCitizen">
+              
+                    </tbody>
+                    
+                </table>
+                <div id="list">
+
+                </div>
+            </div>
+    </div>
+    <footer>
+        <span style="float: left;"> Darphe HYPPOLITE JEAN - WAP</span>
+        <span style="float: right;">@ April 2020</span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,8 +1,6 @@
 
-.formDiv{
-    margin: 2em;
-    padding: 1em;
-    border: 0px solid lightgray;
+#formdiv{
+    margin-top: 2em;
 }
 #thead{
     background-color: aquamarine;

@@ -33,7 +33,7 @@
     </header>
     <main>
         
-        <div class="formDiv">
+        <div id="formdiv" class="container">
             <h1>Bank Account Form</h1>
             <form id="bankForm" method="POST">
                 <fieldset>
@@ -56,13 +56,14 @@
                     </div>
                     <div>
                         <input id="btSubmit" type="submit" class="btn btn-outline-success" value="Create New Account" >
+                        <input id="listSubmit" type="button" class="btn btn-primary" value="List New Account" >
                     </div>
-                    <div>
+                    <!-- <div>
                         <hr/>
                         <h4>List of Customer Accounts</h4>
                         <ul id="listAccount">
                         </ul>
-                    </div>
+                    </div> -->
                 </fieldset>
             </form>
             <div id="validators">
@@ -70,6 +71,28 @@
                 <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="./images/w3c-css.png" alt="Valid CSS" /></a>
             </div>
         </div>
+        <div style="padding-top: 1em;" class="container">
+            <h4>List of Customer's Accounts</h4>
+            <hr/>
+            <!-- <span style="float: right;">
+                <a href="addnewAccount.html"><button id="btnSubmit1" class="btn-btn-pimary" type="button" value="Submit">Add new Book</button></a>
+            </span>
+         -->
+            <div id="accountList" style="font-size: 1em;">
+                <table class="table table-striped" id="booksTable">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Account No.</th>
+                            <th>Customer Name</th>
+                            <th>Account type</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"> </tbody>
+                </table>
+            </div>
+        </div>
+
         <footer>
             <span style="float: left;">CS472 Bank ::: WAP</span>
             <span style="float: right;">(C) Darphe HYPPOLITE JEAN</span>
